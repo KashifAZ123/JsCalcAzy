@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>JS Calculator</title>
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid my-5 mx-0 ">
+
+        <table class="table-bordered table-striped align-center mx-auto table-calc ">
+
+            <thead>
+                <tr>
+                    <th colspan="4  " class="text-center py-5 px-5 calc-head">Calculator</th>
+
+                </tr>
+            </thead>
+            <tbody class="text-center">
+
+                <tr>
+                    <td colspan="20">
+                        <p class="text-center text-dark py-4" id="screen"> </p>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+
+                    <td class="py-2"><button type="button" class="btn btn-light btn-lg btn-outline-info plus" onclick="Addit()"> + </button></td>
+                    <td><button type="button" class="btn btn-light btn-lg btn-outline-info minus" onclick="Subractit()"> - </button></td>
+                    <td><button type="button" class="btn btn-light btn-lg btn-outline-info multiply" onclick="Multiplyit()"> * </button> </td>
+                    <td><button type="button" class="btn btn-outline-info btn-lg" onclick="Divideit()"> / </button> </td>
+                </tr>
+                <tr>
+                    <td class="py-2"> <button type="button" class="btn btn-light btn-lg" id="in_calc7" onclick="clickListener(7)">7</button></td>
+                    <td><button type="button" class="btn btn-light btn-lg" id="in_calc8" onclick="clickListener(8)">8</button></td>
+                    <td><button type="button" class="btn btn-light btn-lg" id="in_calc9" onclick="clickListener(9)">9</button></td>
+                    <td><button type="button" class="btn btn-danger btn-lg" onclick="removeFunc()" id="charRemover">DEL</button></td>
+                </tr>
+                <tr>
+                    <td class="py-2"><button type="button" class="btn btn-light btn-lg" id="in_calc4" onclick="clickListener(4)">4</button></td>
+                    <td><button type="button" class="btn btn-light btn-lg" id="in_calc5" onclick="clickListener(5)">5</button></td>
+                    <td><button type="button" class="btn btn-light btn-lg" id="in_calc6" onclick="clickListener(6)"> 6 </button></td>
+                    <td><button type="button" class="btn btn-danger btn-lg" onclick="delFunc()"> C </button></td>
+                </tr>
+                <tr>
+                    <td class="py-2"><button type="button" class="btn btn-light btn-lg" id="in_calc1" onclick="clickListener(1)">1</button></td>
+                    <td><button type="button" class="btn btn-light btn-lg" id="in_calc2" onclick="clickListener(2)">2</button></td>
+                    <td><button ty pe="button" class="btn btn-light btn-lg" id="in_calc3" onclick="clickListener(3)"> 3 </button></td>
+                    <td><button type="button" class="btn btn-danger btn-lg" onclick="calcFunc()"> = </button></td>
+                </tr>
+            </tbody>
+
+
+
+
+
+
+
+        </table>
+
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Developed By Kashif AZ
+
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> -->
+<script src="script.js"></script>
+
+</html>
